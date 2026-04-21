@@ -12,7 +12,7 @@ import jakarta.ws.rs.core.Response;
 import java.util.HashMap;
 import java.util.Map;
 
-@Path("/") // This handles GET /api/v1
+@Path("/info")
 public class DiscoveryResource {
 
     @GET
@@ -23,7 +23,6 @@ public class DiscoveryResource {
         info.put("name", "Smart Campus API");
         info.put("contact", "admin@smartcampus.ac.uk");
 
-        // Links to resources (this is the HATEOAS concept for your report)
         Map<String, String> links = new HashMap<>();
         links.put("rooms", "/api/v1/rooms");
         links.put("sensors", "/api/v1/sensors");
