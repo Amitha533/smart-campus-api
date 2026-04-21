@@ -7,7 +7,7 @@ package com.smartcampus;
 import jakarta.ws.rs.ApplicationPath;
 import jakarta.ws.rs.core.Application;
 
-@ApplicationPath("/api/v1") // All your endpoints will start with /api/v1
+@ApplicationPath("/")
 public class SmartCampusApp extends Application {
-    // Jersey scans for classes automatically, nothing needed here
+
 }
